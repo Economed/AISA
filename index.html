@@ -1234,7 +1234,7 @@
             "I, II และ III"
         ],
         "answer": "4",
-        "explanation": "",
+        "explanation": "ทดสอบคำอธิบาย ใครหัวโต ก็จะเห็นข้อความ",
         "reference": "",
         "category": "วิชา 1 มาตรฐานและจรรยาบรรณการปฏิบัติวิชาชีพด้านการวิเคราะห์การลงทุน"
     },
@@ -11390,7 +11390,7 @@ window.examSet05 = [
             "มีโอกาส 5% ที่พอร์ตการลงทุนจะขาดทุน 161,400 บาท ใน 1 วัน"
         ],
         "category": "กลุ่มวิชาที่ 3 การวิเคราะห์หลักทรัพย์และการบริหารกลุ่มสินทรัพย์ลงทุน - วิชาการบริหารกลุ่มหลักทรัพย์ลงทุนขั้นสูง",
-        "reference": "การบริหารกลุ่มหลักทรัพย์ขั้นสูง หน้า 85 – 86 ******************************",
+        "reference": "การบริหารกลุ่มหลักทรัพย์ขั้นสูง หน้า 85 – 86",
         "explanation": "ตัวเลือก 1 ไม่ถูกต้อง เพราะไม่สามารถนำผลขาดทุนมาเฉลี่ยเป็นรายวันได้ ตัวเลือก 2 ถูกต้อง เพราะ 2.69% x 6,000,000 = 161,400 บาท คือ ผลขาดทุนสูงสุดที่อาจเกิดขึ้น 1 ครั้ง ใน 1 เดือน (20 วัน) หรือ ประมาณร้อยละ 5 (ระดับ α) ตัวเลือก 3 ไม่ถูกต้อง เพราะโอกาสการขาดทุนใน 1 วัน ไม่ใช่ร้อยละ 5",
         "answer": "2"
     }
@@ -11902,7 +11902,8 @@ window.examSet05 = [
             const qMaster = quizData.find(m => m.id === qSession.id) || qSession;
 
             const expBox = document.getElementById('explanation-box');
-            expBox.innerHTML = `<strong>เฉลย:</strong> ${qMaster.answer}<br><br><strong>คำอธิบาย:</strong> ${qMaster.explanation || '-'}<br><br><strong>อ้างอิง:</strong> ${qMaster.reference}`;
+            expBox.innerHTML = `<strong>เฉลย:</strong> ${qMaster.answer}<br><br><strong>คำอธิบาย:</strong> ${qMaster.explanation}<br><br><strong>อ้างอิง:</strong> ${qMaster.reference}`;
+	//expBox.innerHTML = `<strong>เฉลย:</strong> ${qMaster.answer}<br><br><strong>คำอธิบาย:</strong> ${qMaster.explanation || '-'}<br><br><strong>อ้างอิง:</strong> ${qMaster.reference}`;
         }
 
         function initNavGrid() {
